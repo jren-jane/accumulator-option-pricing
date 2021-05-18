@@ -1,4 +1,4 @@
-# accumulator-pricing
+# accumulator-option-pricing
 The .py files price an accumulator option using Monte Carlo simulation and calculate its profit and loss distribution given different volatilities. The .m files provides an analytical function to approximate the value of an accumulator option. 
 
 ## The option
