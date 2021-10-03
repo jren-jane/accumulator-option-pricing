@@ -17,7 +17,7 @@ The shares accumulated for each accumulation period will be delivered to the inv
 - The approximation formula for an accumulator option is taken from a paper by Kin Lam. (See file ana_acc.m)
 
 ## Monte Carlo simulation method
-- Generate a return matrix, and consequently a price matrix under the risk-neutral measure. For each observation day: If it is neither a settlement day nor an early termination day, we accumulate the number of shares and set the payoff equal to the previous period payoff; if it is either a settlement day or an early termination day, we set the payoff equal to the previous day payoff plus the discounted value of the number of shares times the price of the forward. After each settlement day, we set the number of shares back to zero and begin with the next month.
+- Generate a return matrix, and consequently a price matrix under the risk-neutral measure. For each observation day: If it is neither a settlement day nor an early termination day, we accumulate the number of shares and set the payoff equal to the previous observation day payoff; if it is either a settlement day or an early termination day, we set the payoff equal to the previous day payoff plus the discounted value of the number of shares times the price of the forward. After each settlement day, we set the number of shares back to zero and begin with the next month.
 - To gain the fair value of the option, we average over all the simulated paths. To look at the payoff distribution for different volatilities, we plot the payoffs from each simulation. 
 
 ## Results
