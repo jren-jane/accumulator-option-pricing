@@ -8,6 +8,10 @@ An accumulator is settled periodically throughout its term. At each settlement:
 - If the market price of the underlying security is between the knock-out price and the strike price, the buyer "accumulates" the underlying security at the strike price.
 - If the market price of the underlying security is below the strike price, the buyer is obligated to buy the underlying security at the strike price at 2 (or more) times of the predetermined amount.
 
+In case of knock-out, the aggregate number of shares accumulated will be settled on the early termination date, which is the third business day following the occurrence of early termination event. 
+
+The shares accumulated for each accumulation period will be delivered to the investor on the third business day following the end of each monthly accumulation period. 
+
 ## The analytical pricing method
 - In the case that the knock-out barrier is extremely high, there will be no knock-out. And the accumulator is equivalent to a series of call and put options on forwards. The value of a forward contract can be calculated by risk-neutral pricing. (See file acc_XH.m)
 - The approximation formula for an accumulator option is taken from a paper by Kin Lam. (See file ana_acc.m)
