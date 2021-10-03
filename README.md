@@ -10,8 +10,11 @@ An accumulator is settled periodically throughout its term. At each settlement:
 
 ## The analytical pricing method
 - In the case that the knock-out barrier is extremely high, there will be no knock-out. And the accumulator is equivalent to a series of call and put options on forwards. The value of a forward contract can be calculated by risk-neutral pricing. (See file acc_XH.m)
-- The approximation formula for an accumulator option is taken from a paper by Kin Lam, except that possible earlier payoff when a knock-out happens during a settlement period is considered. (See file ana_acc.m)
+- The approximation formula for an accumulator option is taken from a paper by Kin Lam. (See file ana_acc.m)
 
+## Monte Carlo simulation method
+- Generate a return matrix, and consequently a price matrix under the risk-neutral measure. For each observation day:
+-- If it is not
 
 ## Results
 ![img](https://github.com/jren-jane/accumulator-option-pricing-monte-carlo/blob/259b56847ec0cf76ece44554f56fe2fc3274c200/myplot.png)
